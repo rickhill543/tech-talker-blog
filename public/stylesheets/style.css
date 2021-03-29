@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #225ca3;
+  font-weight: bold;
+  transition: color .1s;
+}
+
+a:hover {
+  color: #3486eb;
+}
+
+button {
+  background-color: #231210;
+  border: 0;
+  padding: 1%;
+  color: white;
+  font-weight: bold;
+  transition: background-color .1s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3b1e1b;
+}
+
+textarea, input {
+  padding: .5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  border: 1px solid #3486eb;
+}
+
+textarea {
+  min-width: 40%;
+  min-height: 100px;
+}
+
+form > div {
+  margin-bottom: 2%;
+}
+
+form label {
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+  flex-wrap: wrap;
+  background: #231210;
+}
+
+nav {
+  width: 100%;
+  padding: 15px 0;
+}
+
+nav a {
+  padding-right: 30px;
+  font-weight: 200;
+  color: #d9ead3;
+}
+
+main {
+  background: #d9ead3;
+  flex: 1;
+}
+
+main .title-wrapper {
+  background-color: #231210;
+}
+
+main .title-container {
+  background: #d9ead3;
+  border-radius: 5px;
+  box-shadow: 5px 5px 1px 1px grey;
+  margin-bottom: 20px;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+main .title-container h1 {
+  font-size: 24px;
+  font-weight: 800;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+main section {
+  padding: 2% 4%;
+}
+
+main ul {
+  list-style: none;
+}
+
+.post-list {
+  padding: 20px 40px;
+}
+
+.btn-no-style {
+  font-weight: 200;
+  color: #d9ead3;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+  transition: color .1s;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: #3486eb;
+}
+
+.btn-create-post {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.save-post-btn {
+  background-color: #53ce2e;
+}
+
+.save-post-btn:hover {
+  background-color: #4bb62b;
+}
+
+.delete-post-btn {
+  background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+  background-color: #ff643d;
+}
+
+.post {
+  border: 3px solid #231210;
+  margin-bottom: 2%;
+  line-height: 150%;
+}
+
+.post-styles .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #231210;
+}
+
+.post-styles .title a {
+  padding: 7px 20px;
+  color: #d9ead3;
+  font-size: 18px;
+}
+
+.post-styles .title a:hover {
+  color: #baccb4;
+}
+
+.post-styles .title span {
+  font-style: italic;
+  font-size: 90%;
+  color: #d9ead3;
+  padding-right: 20px;
+}
+
+.post-styles .text {
+  padding: 15px;
+  font-weight: 700;
+}
+
+.create-post-container {
+  display: flex;
+  justify-content: center;
+}
+
+.previous-posts {
+  padding-bottom: 0;
+}
+
+.previous-posts h2 {
+  margin: 0;
+}
+
+.previous-posts ul {
+  padding: 0;
+}
+
+.post-dashboard {
+  border: 3px solid #555;
+  border-radius: 5px;
+  margin-bottom: 2%;
+  line-height: 150%;
+}
+
+.post-dashboard .title {
+  background: #555;
+}
+
+.edit-form {
+  border: 3px solid #231210;
+}
+
+.edit-form h2 {
+  background: #231210;
+  margin: 0;
+  font-size: 18px;
+  color: #d9ead3;
+  padding: 5px 10px;
+}
+
+.edit-post-form,
+.single-post-text {
+  padding: 10px;
+}
+
+.edit-post-form span {
+  display: block;
+}
+
+.edit-post-form input {
+  display: inline-block;
+  width: 60%;
+  margin-bottom: 15px;
+}
+.edit-post-form textarea {
+  width: 60%;
+  margin-bottom: 15px;
+}
+
+.edit-post-form button,
+.comment-form button,
+.login-form button,
+.signup-form button,
+.new-post-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.edit-post-form input,
+.new-post-form input,
+.edit-post-form textarea,
+.new-post-form textarea,
+.comment-form textarea {
+  border: 2px solid #6196e5;
+  width: 100%;
+}
+
+.edit-text {
+  display: block;
+  margin: -1.5% 0 2% 0;
+}
+
+.form-container {
+  border: 3px solid #231210;
+  margin-bottom: 20px;
+}
+
+.form-container .title {
+  padding: 7px 20px;
+  color: #d9ead3;
+  font-size: 18px;
+  height: 36px;
+  background: #231210;
+}
+
+.comment-form,
+.login-form,
+.signup-form,
+.new-post-form {
+  padding: 10px;
+}
+
+.login-form label,
+.signup-form label ,
+.new-post-form label {
+  font-weight: 700;
+}
+
+.comment-form span {
+  display: block;
+}
+
+.comment-form button {
+  background: #555;
+}
+
+.comment-form button:hover {
+  background: rgb(59, 59, 59);
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+  background-color: #fff5eb;
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: .5%;
+  opacity: .6;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-size: 110%;
+}
