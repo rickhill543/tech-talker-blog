@@ -1,0 +1,24 @@
+<div class="title-wrapper">
+    <div class="title-container">
+      <h1>Your Dashboard</h1>
+    </div>
+</div>
+
+{{#if posts.length}}
+<section class="previous-posts">
+  <h2>Previous Posts</h2>
+  <ul>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-dashboard post}}
+    </li>
+    {{/each}}
+  </ul>
+</section>
+{{/if}}
+
+<div class="create-post-container">
+  <button class="btn-create-post">+ New Post!</button>
+</div>
+
+<script src="/javascript/create-post.js"></script>

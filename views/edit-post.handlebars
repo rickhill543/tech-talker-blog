@@ -1,0 +1,26 @@
+<div class="title-wrapper">
+    <div class="title-container">
+      <h1>Post Editor</h1>
+    </div>
+</div>
+
+<article class="edit-dashboard">
+  <section class="edit-container">
+    <div class="edit-form">
+      <h2>Edit Post</h2>
+      <form class="edit-post-form">
+        <div>
+          <span>Title</span>
+          <input name="post-title" type="text" value="{{post.title}}" />
+          <span>Content</span>
+          <textarea name="post-text" type="text"  value="{{post.post_text}}">{{post.post_text}}</textarea>
+        </div>
+        <button type="submit" class="save-post-btn">Update Post</button>
+        <button type="button" class="delete-post-btn">Delete Post</button>
+      </form>
+    </div>
+  </section>
+</article>
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
